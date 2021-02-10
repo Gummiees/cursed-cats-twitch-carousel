@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursed cats Twitch carousel</title>
+    <style>
+        * {box-sizing:border-box}
+
+body {
+  margin: 0;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+    </style>
+</head>
+<body>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides">
+      <img src="https://i.ibb.co/dGMPsQn/IMG-20210208-115041.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/kDfBx2C/IMG-20210202-114534.jpg" alt="IMG-20210202-114534" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/mRdjrf8/IMG-20210202-114609.jpg" alt="IMG-20210202-114609" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/B47DrXc/IMG-20210202-114736.jpg" alt="IMG-20210202-114736" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/cYYtD69/IMG-20210202-115012.jpg" alt="IMG-20210202-115012" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/JBqKkCk/IMG-20210203-180416.jpg" alt="IMG-20210203-180416" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/F4Ss5dW/IMG-20210203-180451.jpg" alt="IMG-20210203-180451" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/tqgxLDD/IMG-20210203-180823.jpg" alt="IMG-20210203-180823" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/dfSpmnd/IMG-20210204-012643.jpg" alt="IMG-20210204-012643" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/26nDyQy/IMG-20210204-012747.jpg" alt="IMG-20210204-012747" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/G016J22/IMG-20210202-015634.jpg" alt="IMG-20210202-015634" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/hC9qkRz/IMG-20210202-015707.jpg" alt="IMG-20210202-015707" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/JBw8QNj/IMG-20210202-114310.jpg" alt="IMG-20210202-114310" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/KK1YbYG/IMG-20210204-012747.jpg" alt="IMG-20210204-012747" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/nzL4qv3/IMG-20201003-180945.jpg" alt="IMG-20201003-180945" style="width: 100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/pXBmPHw/IMG-20201106-223554.jpg" alt="IMG-20201106-223554" style="width: 100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/SJVzV8r/IMG-20200731-215212.jpg" alt="IMG-20200731-215212" style="width: 100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/PjRNynV/IMG-20200913-232601.jpg" alt="IMG-20200913-232601" style="width: 100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/5WydB4q/IMG-20200922-005145.jpg" alt="IMG-20200922-005145" style="width: 100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://i.ibb.co/CMxbQsw/IMG-20200922-005200.jpg" alt="IMG-20200922-005200" style="width: 100%">
+    </div>
+  </div>
+  <br>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+</body>
+</html>
